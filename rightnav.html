@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {box-sizing: border-box;}
+        body {margin: 0;}
+        .navbar {background-color: darkviolet; width: 100%; display: flow-root; position: fixed;}
+        ul {list-style-type: none; margin: 0; padding: 0;}
+        .navbar a {text-decoration: none; float: left; padding: 15px; font-size: 20px;
+                  color: white; font-family: 'Gill sans MT';
+                position: relative; left: 60%;}
+        .navbar a:hover {background-color: crimson; color: white;}
+        .img {background: url(files/1.bigfile2.jpeg);
+             height: 100vh; background-size: cover;}
+        div {background-color: black; padding: 10px;}
+        p {font-size:  40px; color: white;}
+        
+        @media screen and (max-width:1300px) {
+            .navbar a {
+                left: 55%;}
+        }
+        @media screen and (max-width:1125px) {
+            .navbar a {
+                left: 50%;}
+        }
+        @media screen and (max-width:1005px) {
+            .navbar a {
+                left: 30%;}
+        }
+        @media screen and (max-width:725px) {
+            .navbar a {
+                left: 20%;}
+        }
+        @media screen and (max-width:640px) {
+            .navbar a {
+                left: 15%;}
+        }
+        @media screen and (max-width:600px) {
+            .navbar a {float: none; display: block; text-align: center;
+                      position: static;}
+            .navbar {position: static;}
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li> <a href=""> Home</a> </li>
+            <li> <a href=""> History</a> </li>
+            <li> <a href=""> Who We Are</a> </li>
+            <li> <a href=""> Products</a> </li>
+            <li> <a href=""> Contact</a> </li>
+        </ul>
+    </nav>
+    <header class="img">
+
+    </header>
+    <div>
+        <p>Integer nec odio. Praesent libero. Sed cursus ante 
+            dapibus diam. Sed nisi. Nulla quis sem at nibh 
+            elementum imperdiet. Duis sagittis ipsum. Praesent 
+            mauris. Fusce nec tellus sed augue semper porta. 
+            Mauris massa. Vestibulum lacinia arcu eget nulla
+            Integer nec odio. Praesent libero. Sed cursus ante 
+            dapibus diam. Sed nisi. Nulla quis sem at nibh 
+            elementum imperdiet. Duis sagittis ipsum. Praesent 
+            mauris. Fusce nec tellus sed augue semper porta. 
+            Mauris massa. Vestibulum lacinia arcu eget nulla</p>
+    </div>
+</body>
+</html>

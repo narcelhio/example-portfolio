@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {overflow: hidden; background-color: darkgray;}
+        div {width: 40px; height: 40px; margin-bottom: 10px; 
+            border-radius: 50%; position: absolute;
+            top: 50%; }
+        div:nth-child(1) {background-color: rebeccapurple;
+                        animation: move 2s cubic-bezier(.2,.64,.81,.23) infinite;}
+        div:nth-child(2) {background-color: palevioletred;
+                        animation: move 2s cubic-bezier(.2,.64,.81,.23) infinite 200ms;}
+        div:nth-child(3) {background-color: orangered;
+                        animation: move 2s cubic-bezier(.2,.64,.81,.23) infinite 400ms;}
+        div:nth-child(4) {background-color: teal;
+                        animation: move 2s cubic-bezier(.2,.64,.81,.23) infinite 600ms;}
+        @keyframes move {
+            from {left: 0%;}
+            to {left: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>
